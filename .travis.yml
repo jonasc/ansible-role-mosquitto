@@ -1,6 +1,6 @@
 env:
   - distro: centos7
-    init: /usr/lib/systmed/systemd
+    init: /usr/lib/systemd/systemd
     run_opts: "--privileged --volume =/ sys/ fs/ cgroup:/ sys/ fs/ cgroup:r\ o"
   - distro: debian8
     init: /lib/systemd/systemd
