@@ -2,9 +2,3 @@
   apt:
     name: '{{ item }}'
   with_items: '{{ os_packages }}'
-
-- name: Make sure mosquitto is started and enabled to start on boot
-  systemd:
-    name: 'mosquitto'
-    state: 'started'
-    enabled: 'yes'
