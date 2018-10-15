@@ -12,7 +12,7 @@ galaxy_info:
     - 7
   - name: debian
     versions:
-    - 8
+    - stretch
 
   galaxy_tags: [mqtt,mosquitto]
 
