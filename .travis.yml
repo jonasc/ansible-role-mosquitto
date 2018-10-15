@@ -7,6 +7,7 @@ env:
     - ROLE_NAME: autoarchive
   matrix:
     - distro: centos7
+      ROLE_NAME: autoarchive
       init: /usr/lib/systemd/systemd
       run_opts: "--privileged --volume =/ sys/ fs/ cgroup:/ sys/ fs/ cgroup:r\ o"
     - distro: debian8
