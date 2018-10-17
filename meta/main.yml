@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: mosquitto
+  role_name: tigerjython
   author: Bastian Bukatz
   description: simple role to setup mosquitto mqtt broker
 
@@ -15,7 +15,7 @@ galaxy_info:
     versions:
     - stretch
 
-  galaxy_tags: [mqtt,mosquitto]
+  galaxy_tags: [raspberry,tigerjython,raspberrypi]
 
 
 dependencies: []

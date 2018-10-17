@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tiger
+exec=sudo java -jar /home/{{ installation_os_user }}/tigerjython/tigerjython2.jar
+Icon=/usr/share/pixmaps/tjlogo.png
+Terminal=false
+Type=Application
+Categories=Application,Development;
+StartupNotify=true

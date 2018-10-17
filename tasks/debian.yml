@@ -1,3 +1,12 @@
-- name: Install OS Packages
-  apt:
-    name: 'mosquitto'
+
+- name: download tigerjython logo
+  get_url:
+    url: http://www.tigerjython.ch/lernumgebung/bilder/tjlogo.png
+    dest: '/usr/share/pixmaps/'
+    owner: '{{ installation_os_user }}'
+    group: '{{ installation_os_group }}'
+
+- name: create desktop Entry
+  template:
+    src: tigerjython.desktop
+    dest: /usr/share/raspi-ui-overrides/applications/
