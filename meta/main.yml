@@ -1,6 +1,6 @@
 galaxy_info:
-  role_name: tigerjython
   author: Bastian Bukatz
+  role_name: mosquitto
   description: simple role to setup mosquitto mqtt broker
 
   license: license (GPLv2, CC-BY, etc)
