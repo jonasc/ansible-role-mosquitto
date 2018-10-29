@@ -1,6 +1,6 @@
 - name: Install OS Packages
   yum:
-    name: '{{ items }}'
+    name: '{{ item }}'
   with_items:
     - 'mosquitto'
     - 'mosquitto-clients'

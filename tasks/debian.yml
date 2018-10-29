@@ -1,6 +1,6 @@
 - name: Install OS Packages
   apt:
-    name: '{{ items }}'
+    name: '{{ item }}'
   with_items:
     - 'mosquitto'
     - 'mosquitto-clients'
