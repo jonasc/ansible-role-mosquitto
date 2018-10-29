@@ -3,4 +3,3 @@
     name: '{{ item }}'
   with_items:
     - 'mosquitto'
-    - 'mosquitto-clients'
