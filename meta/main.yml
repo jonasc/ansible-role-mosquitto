@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Bastian Bukatz
+  author: Bassinator
   role_name: mosquitto
   description: simple role to setup mosquitto mqtt broker
 
