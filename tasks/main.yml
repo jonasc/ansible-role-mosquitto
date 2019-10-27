@@ -7,6 +7,12 @@
 - include_tasks: debian.yml
   when: ansible_os_family == "Debian"
 
+- name: copy config file to enable websocket listener
+  copy:
+    src: websocket.conf
+    dest: /etc/mosquitto/conf.d/
+    mode: 0644
+
 
 - name: Make sure mosquitto is started and enabled to start on boot
   systemd:
