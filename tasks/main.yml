@@ -1,5 +1,5 @@
 ---
-  
+
 - include_tasks: centOS.yml
   when: ansible_os_family == "RedHat"
 
@@ -7,6 +7,13 @@
 - include_tasks: debian.yml
   when: ansible_os_family == "Debian"
 
+- name: Copy config files
+  copy:
+    src: '{{ item }}'
+    dest: /etc/mosquitto/conf.d
+  with_items:
+    - websocket.conf
+    - default.conf
 
 - name: Make sure mosquitto is started and enabled to start on boot
   systemd:
