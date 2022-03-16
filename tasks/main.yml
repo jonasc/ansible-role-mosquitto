@@ -14,6 +14,13 @@
     - websocket.conf
     - default.conf
 
+- name: Create password file
+  command: mosquitto_passwd -c /etc/mosquitto/passwd {{ mqtt_user }}
+  args:
+    stdin: |
+      {{ mqtt_password }}
+      {{ mqtt_password }}
+
 - name: Make sure mosquitto is started and enabled to start on boot
   systemd:
     name: 'mosquitto'
