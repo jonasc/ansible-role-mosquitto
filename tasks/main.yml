@@ -21,6 +21,13 @@
       {{ mqtt_password }}
       {{ mqtt_password }}
 
+- name: Ensure correct rights for password file
+  ansible.builtin.file:
+    path: /etc/mosquitto/passwd
+    mode: u=rw,g=r,o=
+    owner: mosquitto
+    group: mosquitto
+
 - name: Make sure mosquitto is started and enabled to start on boot
   systemd:
     name: 'mosquitto'
